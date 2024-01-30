@@ -1,5 +1,29 @@
 .sidebar {
-    width: 200px;
+    width: 250px;
     border-right: 1px solid rgba($color: #000000, $alpha: 0.1);
     box-shadow: 2px 0 4px rgba($color: #000000, $alpha: 0.1);
+}
+
+.list-item {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+
+    margin: 12px;
+    padding: 6px;
+    border-radius: 8px;
+    background-color: aqua;
+
+    button {
+        display: flex;
+        gap: 8px;
+        padding: 0;
+
+        border: none;
+        background-color: transparent;
+    }
+}
+
+ul {
+    padding: 0;
 }

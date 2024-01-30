@@ -7,9 +7,11 @@ type Props = {
 
 const NavLink = ({ name, imgUrl }: Props) => {
   return (
-    <li>
-      <img src={imgUrl} alt={name} />
-      <Typography>{name}</Typography>
+    <li className="list-item">
+      <button>
+        <img src={imgUrl} alt={name} />
+        <Typography>{name}</Typography>
+      </button>
     </li>
   );
 };
