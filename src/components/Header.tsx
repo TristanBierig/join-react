@@ -2,11 +2,10 @@ import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import "./Header.scss";
-import { Button } from "@mui/material";
 
 const Header = () => {
   return (
-    <AppBar>
+    <AppBar position="static">
       <Toolbar sx={{ justifyContent: "space-between" }} variant="dense">
         <img
           className="header__logo"
@@ -18,9 +17,6 @@ const Header = () => {
         <Typography variant="h6" color="inherit" component="div">
           Kanban Project Managment Tool
         </Typography>
-        <Button color="secondary" variant="outlined">
-          Test
-        </Button>
       </Toolbar>
     </AppBar>
   );
