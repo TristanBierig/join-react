@@ -12,16 +12,26 @@
     margin: 12px;
     padding: 6px;
     border-radius: 8px;
-    background-color: aqua;
 
+    cursor: pointer;
+
+    &:hover:not(.list-item__active) {
+        background-color: aquamarine;
+    }
+    
     button {
         display: flex;
         gap: 8px;
         padding: 0;
-
+        
         border: none;
         background-color: transparent;
+        cursor: pointer;
     }
+}
+
+.list-item__active {
+    background-color: aqua;
 }
 
 ul {
