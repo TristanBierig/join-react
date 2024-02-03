@@ -8,7 +8,7 @@ type Props = {
   onClick: React.Dispatch<React.SetStateAction<number>>;
 };
 
-const NavLink: React.FC<Props> = ({ index, name, imgUrl, isActive, onClick }) => {
+const ListLink: React.FC<Props> = ({ index, name, imgUrl, isActive, onClick }) => {
 
   let className = "list-item";
   if (isActive === index) className += " list-item__active";
@@ -23,4 +23,4 @@ const NavLink: React.FC<Props> = ({ index, name, imgUrl, isActive, onClick }) =>
   );
 };
 
-export default NavLink;
+export default ListLink;
