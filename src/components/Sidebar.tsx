@@ -33,9 +33,8 @@ const Sidebar = () => {
     <nav className="sidebar" data-cy="sidebar">
       <ul>
         {links.map((link, i) => (
-          <NavLink to={`/${link.name.replace(/\s/g, "-")}`}>
+          <NavLink key={i} to={`/${link.name.replace(/\s/g, "-")}`}>
             <ListLink
-              key={i}
               index={i}
               name={
                 link.name.charAt(0).toLocaleUpperCase() + link.name.slice(1)
